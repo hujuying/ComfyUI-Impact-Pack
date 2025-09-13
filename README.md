@@ -1,5 +1,11 @@
 [![Youtube Badge](https://img.shields.io/badge/Youtube-FF0000?style=for-the-badge&logo=Youtube&logoColor=white&link=https://www.youtube.com/watch?v=AccoxDZIg3Y&list=PL_Ej2RDzjQLGfEeizq4GISeY3FtVyFmGP)](https://www.youtube.com/watch?v=AccoxDZIg3Y&list=PL_Ej2RDzjQLGfEeizq4GISeY3FtVyFmGP)
 
+# 自用修复版
+
+精确的错误捕获：能够捕获具体的导入错误信息，帮你诊断真正的问题
+不影响启动：无论SAM2导入成功与否，都不会阻止ComfyUI启动
+详细的错误信息：会显示具体的错误原因，便于进一步排查
+
 # ComfyUI-Impact-Pack
 
 **Custom node pack for ComfyUI**
@@ -23,14 +29,14 @@ NOTE: The UltralyticsDetectorProvider node is not part of the ComfyUI-Impact-Pac
 * V4.12: `MASKS` is changed to `MASK`.
 * V4.7.2 isn't compatible with old version of `ControlNet Auxiliary Preprocessor`. If you will use `MediaPipe FaceMesh to SEGS` update to latest version(Sep. 17th).  
 * Selection weight syntax is changed(: -> ::) since V3.16. ([tutorial](https://github.com/ltdrdata/ComfyUI-extension-tutorials/blob/Main/ComfyUI-Impact-Pack/tutorial/ImpactWildcardProcessor.md))
-* Starting from V3.6, requires latest version(Aug 8, 9ccc965) of ComfyUI.
+* Starting from V3.6, requires latest version(8月8日9ccc965) of ComfyUI.
 * **In versions below V3.3.1, there was an issue with the image quality generated after using the UltralyticsDetectorProvider. Please make sure to upgrade to a newer version.**
 * Starting from V3.0, nodes related to `mmdet` are optional nodes that are activated only based on the configuration settings.
   - Through ComfyUI-Impact-Subpack, you can utilize UltralyticsDetectorProvider to access various detection models.
 * Between versions 2.22 and 2.21, there is partial compatibility loss regarding the Detailer workflow. If you continue to use the existing workflow, errors may occur during execution. An additional output called "enhanced_alpha_list" has been added to Detailer-related nodes.
 * The permission error related to cv2 that occurred during the installation of Impact Pack has been patched in version 2.21.4. However, please note that the latest versions of ComfyUI and ComfyUI-Manager are required.
-* The "PreviewBridge" feature may not function correctly on ComfyUI versions released before July 1, 2023.
-* Attempting to load the "ComfyUI-Impact-Pack" on ComfyUI versions released before June 27, 2023, will result in a failure.
+* The "PreviewBridge" feature may not function correctly on ComfyUI versions released before2023年7月1日.
+* Attempting to load the "ComfyUI-Impact-Pack" on ComfyUI versions released before2023年6月27日, will result in a failure.
 * With the addition of wildcard support in FaceDetailer, the structure of DETAILER_PIPE-related nodes and Detailer nodes has changed. There may be malfunctions when using the existing workflow.
 
 
